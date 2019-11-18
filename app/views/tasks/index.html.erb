@@ -7,7 +7,9 @@
       <i class="fa fa-square"></i>
       <% end %>
       <%= link_to task.title, task_path(task) %>-
-      <%= link_to "(DELETE)", destroy_path(task), method: :delete, data: { confirm: "Do you really want to delete this task?" } %>
+      <%= link_to destroy_path(task), method: :delete, data: { confirm: "Do you really want to delete this task?" } do %>
+      <i class="fa fa-trash-o"></i>
+      <% end %>
     </p>
   <% end %>
 

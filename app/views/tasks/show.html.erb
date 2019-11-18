@@ -1,9 +1,9 @@
 <h1><%=@task.title %></h1>
 <h3><%= @task.details %></h3>
 <% if @task.completed %>
-  <i class="fa fa-check-square"></i>
+  <p>Completed<i class="fa fa-check-square"></i></p>
 <% else %>
-  <i class="fa fa-square"></i>
+  <p>Completed<i class="fa fa-square"></i></p>
 <% end %>
 
 <%= link_to "Update task", edit_path %>
